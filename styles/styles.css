@@ -423,9 +423,7 @@ main > .section:first-of-type {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--color-neutral-500);
   margin: 0;
-  padding: var(--spacing-xbig) 0;
 }
 
 /* Base Design System Tokens */
@@ -493,4 +491,12 @@ body.columns main > .section:empty {
 */
 main[hidden] {
   display: none !important;
+}
+
+.ds-widgets .h-full {
+  height: auto !important;
+}
+
+.product-recommendations .h2 {
+  font-size: x-large !important;
 }
