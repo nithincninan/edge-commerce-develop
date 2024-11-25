@@ -8,9 +8,6 @@ import {
 } from '@dropins/tools/fetch-graphql.js';
 import * as authApi from '@dropins/storefront-auth/api.js';
 
-// Recaptcha
-//import * as recaptcha from '@dropins/tools/recaptcha.js';
-
 // Libs
 import { getConfigValue, getCookie } from '../configs.js';
 
@@ -52,8 +49,6 @@ export default async function initializeDropins() {
   events.enableLogger(true);
   // Set Fetch Endpoint (Global)
   setEndpoint(await getConfigValue('commerce-core-endpoint'));
-  // Recaptcha
-  //recaptcha.setConfig();
 
   // Initialize Global Drop-ins
   await import('./auth.js');
